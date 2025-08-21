@@ -4,8 +4,7 @@
   "description": "Advanced Chit Fund Calculator with Analysis and Best Month Recommendations",
   "main": "index.html",
   "scripts": {
-    "start": "python -m http.server 8000",
-    "build": "echo 'No build step required for static HTML'"
+    "build": "echo 'Static HTML - no build required'"
   },
   "keywords": ["chit", "fund", "calculator", "finance"],
   "author": "Vishnu",
