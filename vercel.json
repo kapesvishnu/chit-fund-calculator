@@ -1,8 +1,7 @@
 {
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/public/advanced_chit_calculator.html"
+  "functions": {
+    "app.py": {
+      "runtime": "python3.9"
     }
-  ]
+  }
 }
