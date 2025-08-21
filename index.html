@@ -627,7 +627,19 @@ Manager Chit Commission: ${document.getElementById('chitCommission').textContent
             document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
             document.getElementById(tabName).classList.add('active');
-            event.target.classList.add('active');
+            
+            // Find and activate the correct button
+            const buttons = document.querySelectorAll('.tab-btn');
+            if (tabName === 'calculator') buttons[0].classList.add('active');
+            else if (tabName === 'sample') buttons[1].classList.add('active');
+            else if (tabName === 'profit') buttons[2].classList.add('active');
+            
+            // Load data for specific tabs
+            if (tabName === 'sample') {
+                loadSampleData();
+            } else if (tabName === 'profit') {
+                loadProfitAnalysis();
+            }
         }
         
         let editMode = false;
