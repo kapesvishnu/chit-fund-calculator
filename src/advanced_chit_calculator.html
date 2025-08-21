@@ -1,7 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Chit Fund Calculator</title>
+    <title>Chit Fund Calculator - Best Month Analysis & Bidding Calculator Online</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online chit fund calculator with best month analysis, bidding rate calculator, profit/loss analysis, and EMI calculations. Calculate optimal bidding strategy for chit funds.">
+    <meta name="keywords" content="chit fund calculator, chit fund bidding calculator, best month analysis, chit fund profit calculator, EMI calculator, dividend calculator, commission calculator">
+    <meta name="author" content="Chit Fund Calculator">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chitfundcalculator.com/">
+    <meta property="og:title" content="Chit Fund Calculator - Best Month Analysis & Bidding Calculator">
+    <meta property="og:description" content="Calculate optimal chit fund bidding strategy with profit/loss analysis, best month recommendations, and EMI calculations. Free online tool.">
+    <meta property="og:image" content="https://chitfundcalculator.com/assets/calculator-preview.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://chitfundcalculator.com/">
+    <meta property="twitter:title" content="Chit Fund Calculator - Best Month Analysis & Bidding Calculator">
+    <meta property="twitter:description" content="Calculate optimal chit fund bidding strategy with profit/loss analysis, best month recommendations, and EMI calculations.">
+    <meta property="twitter:image" content="https://chitfundcalculator.com/assets/calculator-preview.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://chitfundcalculator.com/">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Chit Fund Calculator",
+      "description": "Advanced chit fund calculator with best month analysis, bidding rate calculations, profit/loss analysis, and EMI calculations for optimal chit fund investment strategy.",
+      "url": "https://chitfundcalculator.com/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Chit Fund Bidding Calculator",
+        "Best Month Analysis",
+        "Profit/Loss Calculator",
+        "EMI Calculator",
+        "Dividend Calculator",
+        "Commission Calculator",
+        "Export to PDF/CSV",
+        "Share Results"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "Chit Fund Calculator"
+      }
+    }
+    </script>
     <style>
         body { font-family: 'Segoe UI', Arial; margin: 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
         .container { max-width: 1200px; margin: 0 auto; display: flex; gap: 25px; }
@@ -44,9 +101,53 @@
         .edit-input { width: 80px; padding: 4px; border: 1px solid #ccc; border-radius: 4px; text-align: center; }
         @media (max-width: 768px) { .container { flex-direction: column; } .sample-table { font-size: 10px; } .sample-table th, .sample-table td { padding: 6px 4px; } }
     </style>
+    
+    <!-- Additional SEO Tags -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
 <body>
-    <h1>Chit Fund Calculator</h1>
+    <!-- Language Switcher -->
+    <div style="position: fixed; top: 5px; right: 5px; z-index: 1000; background: rgba(255,255,255,0.9); padding: 4px; border-radius: 6px; box-shadow: 0 1px 5px rgba(0,0,0,0.1);">
+        <button onclick="switchLanguage('en')" style="background: none; border: none; margin: 0 1px; cursor: pointer; font-size: 10px; opacity: 0.7; transition: opacity 0.3s; padding: 2px; font-weight: bold; color: #667eea;" title="English">ENG</button>
+        <button onclick="switchLanguage('te')" style="background: none; border: none; margin: 0 1px; cursor: pointer; font-size: 10px; opacity: 0.7; transition: opacity 0.3s; padding: 2px; font-weight: bold; color: #667eea;" title="తెలుగు">తె</button>
+        <button onclick="switchLanguage('hi')" style="background: none; border: none; margin: 0 1px; cursor: pointer; font-size: 10px; opacity: 0.7; transition: opacity 0.3s; padding: 2px; font-weight: bold; color: #667eea;" title="हिंदी">हि</button>
+    </div>
+    
+    <!-- Hidden SEO Content -->
+    <div style="display: none;">
+        <h2>Chit Fund Calculator - Complete Financial Analysis Tool</h2>
+        <p>Our comprehensive chit fund calculator helps you make informed decisions about chit fund investments. Calculate bidding rates, analyze profit/loss scenarios, determine the best month to bid, and optimize your chit fund strategy.</p>
+        
+        <h3>Key Features:</h3>
+        <ul>
+            <li>Bidding Rate Calculator - Calculate optimal bid amounts and interest rates</li>
+            <li>Best Month Analysis - Find the most profitable month to participate</li>
+            <li>Profit/Loss Analysis - Detailed financial projections and returns</li>
+            <li>EMI Calculator - Monthly installment calculations</li>
+            <li>Dividend Calculator - Calculate member dividends and savings</li>
+            <li>Commission Calculator - Manager commission calculations</li>
+            <li>Export Features - Download results as PDF, CSV, or Excel</li>
+            <li>Share Results - Share calculations via social media or messaging</li>
+        </ul>
+        
+        <h3>How to Use:</h3>
+        <p>1. Enter your chit amount, commission percentage, and total months</p>
+        <p>2. Input current month and bid amount or interest rate</p>
+        <p>3. View instant calculations for bidding rate and member benefits</p>
+        <p>4. Use Analysis Report for detailed monthly breakdown</p>
+        <p>5. Check Best Month Analysis for optimal bidding strategy</p>
+        
+        <h3>Benefits:</h3>
+        <p>Make data-driven decisions for chit fund investments, maximize returns, minimize risks, compare different scenarios, and plan your financial strategy effectively.</p>
+        
+        <h3>Related Terms:</h3>
+        <p>chit fund, chitty, kuri, committee, rotating savings, bidding calculator, financial planning, investment calculator, EMI calculator, profit calculator, dividend calculator</p>
+    </div>
+    
+    <h1 id="mainTitle">Chit Fund Calculator</h1>
     
     <div class="tabs">
         <button class="tab-btn active" onclick="showTab('calculator')">Calculator</button>
@@ -74,12 +175,7 @@
                 <label>Current Month:</label>
                 <input type="text" id="currentMonth" value="1" min="1" onblur="formatCurrentMonthInput(this)" onfocus="removeCommas(this)">
             </div>
-            <div class="input-line">
-                <label>Auction Amount (₹):</label>
-                <input type="text" id="auctionAmount" value="2,00,000" min="0" onblur="formatIndianInput(this)" onfocus="removeCommas(this)">
-            </div>
-            
-            <h2 style="margin-top: 40px;">Auction</h2>
+            <h2 style="margin-top: 40px;">Bidding</h2>
             <div class="radio-group">
                 <span><input type="radio" id="bidRadio" name="auctionType" value="bid" checked><label for="bidRadio">Bid Amount</label></span>
                 <span><input type="radio" id="interestRadio" name="auctionType" value="interest"><label for="interestRadio">Bid Interest</label></span>
@@ -166,8 +262,6 @@
                         <input type="number" id="analysisCurrentMonth" value="1" min="1" style="width: 100%; padding: 4px; border: 1px solid #667eea; border-radius: 3px; font-size: 12px;">
                     </div>
                     <div>
-                        <label style="font-size: 12px; font-weight: bold; color: #4a5568;">Auction Amount (₹):</label>
-                        <input type="text" id="analysisAuctionAmount" value="2,00,000" min="0" style="width: 100%; padding: 4px; border: 1px solid #667eea; border-radius: 3px; font-size: 12px;" onblur="formatIndianInput(this)" onfocus="removeCommas(this)">
                     </div>
                     <div>
                         <label style="font-size: 12px; font-weight: bold; color: #4a5568;">Bid Amount (₹):</label>
@@ -312,8 +406,7 @@
             
             const commission = (commissionPercent * chitAmount) / 100;
             const bidderGets = chitAmount - bidAmount;
-            const auctionAmount = parseFloat(document.getElementById('auctionAmount').value.replace(/,/g, '')) || 200000;
-            const originalInstallment = auctionAmount; // User defined auction amount
+            const originalInstallment = 200000; // Default installment amount
             const totalDividend = bidAmount - commission;
             const dividendPerPerson = totalDividend / 20; // 20 members
             const payableInstallment = originalInstallment - dividendPerPerson; // EMI - Dividend per person
@@ -488,7 +581,7 @@ Manager Chit Commission: ${document.getElementById('chitCommission').textContent
         document.getElementById('commission').addEventListener('input', calculate);
         document.getElementById('totalMonths').addEventListener('input', calculate);
         document.getElementById('currentMonth').addEventListener('input', calculate);
-        document.getElementById('auctionAmount').addEventListener('input', calculate);
+
         document.getElementById('bidAmount').addEventListener('input', calculate);
         document.getElementById('bidInterest').addEventListener('input', calculate);
         document.getElementById('bidAmountSlider').addEventListener('input', function() {
@@ -600,7 +693,7 @@ Manager Chit Commission: ${document.getElementById('chitCommission').textContent
             const bidAmount = parseFloat(document.getElementById('analysisBidAmount').value.replace(/,/g, '')) || 0;
             const chitAmount = parseFloat(document.getElementById('analysisChitAmount').value.replace(/,/g, '')) || 4000000;
             const commissionPercent = parseFloat(document.getElementById('analysisCommission').value) || 4.00;
-            const auctionAmount = parseFloat(document.getElementById('analysisAuctionAmount').value.replace(/,/g, '')) || 200000;
+            const auctionAmount = 200000; // Default amount
             
             if (bidAmount === 0) {
                 alert('Please enter a valid Bid Amount');
@@ -671,7 +764,7 @@ Manager Chit Commission: ${document.getElementById('chitCommission').textContent
             const commissionPercent = parseFloat(document.getElementById('analysisCommission').value) || 0;
             const totalMonths = parseInt(document.getElementById('analysisTotalMonths').value) || 20;
             const currentMonth = parseInt(document.getElementById('analysisCurrentMonth').value) || 1;
-            const auctionAmount = parseFloat(document.getElementById('analysisAuctionAmount').value.replace(/,/g, '')) || 0;
+            const auctionAmount = 200000; // Default amount
             const bidAmount = parseFloat(document.getElementById('analysisBidAmount').value.replace(/,/g, '')) || 0;
             
             // Calculate values same as calculator tab
@@ -824,7 +917,6 @@ Manager Chit Commission: ${document.getElementById('chitCommission').textContent
                 document.getElementById('analysisCommission').value = '';
                 document.getElementById('analysisTotalMonths').value = '';
                 document.getElementById('analysisCurrentMonth').value = '';
-                document.getElementById('analysisAuctionAmount').value = '';
                 document.getElementById('analysisBidAmount').value = '';
                 document.getElementById('emiMonthlyPaid').value = '';
                 
@@ -965,11 +1057,11 @@ Manager Chit Commission: ${document.getElementById('chitCommission').textContent
             // Recalculate dependent values
             const row = sampleData[rowIndex];
             const chitAmount = parseFloat(document.getElementById('analysisChitAmount').value.replace(/,/g, '')) || 4000000;
-            const auctionAmount = parseFloat(document.getElementById('analysisAuctionAmount').value.replace(/,/g, '')) || 200000;
+            const auctionAmount = 200000; // Default amount
             const totalMonths = parseInt(document.getElementById('analysisTotalMonths').value) || 20;
             const totalDividend = row[1] - row[2]; // Bid Amount - Commission
             const dividendPerPerson = totalDividend / totalMonths;
-            row[4] = auctionAmount - dividendPerPerson; // Payable Installment = Auction Amount - Dividend per person
+            row[4] = auctionAmount - dividendPerPerson; // Payable Installment = Default Amount - Dividend per person
             row[5] = chitAmount - row[1]; // Bidder Gets = Chit Amount - Bid Amount
             loadSampleData();
             loadProfitAnalysis();
@@ -978,16 +1070,16 @@ Manager Chit Commission: ${document.getElementById('chitCommission').textContent
         function loadSampleData() {
             // Recalculate all rows with current input values
             const chitAmount = parseFloat(document.getElementById('analysisChitAmount').value.replace(/,/g, '')) || 4000000;
-            const auctionAmount = parseFloat(document.getElementById('analysisAuctionAmount').value.replace(/,/g, '')) || 200000;
+            const auctionAmount = 200000; // Default amount
             const totalMonths = parseInt(document.getElementById('analysisTotalMonths').value) || 20;
             
             sampleData.forEach((row, index) => {
                 const totalDividend = row[1] - row[2]; // Bid Amount - Commission
                 const dividendPerPerson = totalDividend / totalMonths;
                 
-                // For last row, payable installment = auction amount
+                // For last row, payable installment = default amount
                 if (index === sampleData.length - 1) {
-                    row[4] = auctionAmount; // Same as auction amount
+                    row[4] = auctionAmount; // Same as default amount
                     row[5] = chitAmount - row[2]; // Chit Amount - Commission only
                 } else {
                     row[4] = auctionAmount - dividendPerPerson; // Payable Installment
@@ -1176,6 +1268,273 @@ Manager Chit Commission: ${document.getElementById('chitCommission').textContent
             }
         }
         
+        // Language switching functionality
+        const translations = {
+            en: {
+                title: "Chit Fund Calculator",
+                calculator: "Calculator",
+                analysis: "Analysis Report",
+                bestMonth: "Best Month Analysis",
+                analysisReportTitle: "Chit Fund Analysis Report (Monthly)",
+                bestMonthTitle: "Best Month Analysis",
+                recommendedMonth: "🏆 Recommended Month:",
+                maximumProfit: "Maximum Profit:",
+                externalInterestRate: "External Interest Rate:",
+                month: "Month",
+                bidAmountCol: "BID Amount",
+                dealerCommission: "Dealer Commission",
+                payableInstallmentCol: "Payable Installment",
+                bidderGetsCol: "Bidder Gets",
+                profitLoss: "Profit/Loss",
+                monthlyPercent: "Monthly %",
+                totalPercentage: "Total Percentage Profit/Loss (20 Months)",
+                annualRate: "Annual Simple Interest Rate",
+                receivedAmount: "Received Amount",
+                chitProfitLoss: "Chit Profit/Loss",
+                externalInterest: "External Interest",
+                totalBenefit: "Total Benefit",
+                recommendation: "Recommendation",
+                submit: "✓ Submit",
+                fetchToBestMonth: "📊 Fetch to Best Month",
+                edit: "✏️ Edit",
+                sampleData: "📄 Sample Data",
+                clear: "🗑️ Clear",
+                exportPDF: "📄 Export PDF",
+                downloadCSV: "⬇️ Download CSV",
+                chit: "Chit",
+                chitAmount: "Chit Amount (₹):",
+                commission: "Commission (%):",
+                totalMonths: "Total Months:",
+                currentMonth: "Current Month:",
+                bidding: "Bidding",
+                bidAmount: "Bid Amount",
+                bidInterest: "Bid Interest",
+                bidAmountLabel: "Bid Amount (₹):",
+                bidInterestLabel: "Bid Interest (%):",
+                bidder: "Bidder",
+                biddingRate: "Bidding Rate",
+                bidderGets: "Bidder Gets:",
+                shareResult: "📤 Share Result",
+                shareImage: "🖼️ Share Image",
+                save: "💾 Save",
+                otherMembers: "Other Members",
+                originalInstallment: "Original Installment:",
+                dividendPerPerson: "Dividend per Person:",
+                payableInstallment: "Payable Installment:",
+                monthlySavings: "Monthly Savings:",
+                manager: "Manager",
+                chitCommission: "Chit Commission:"
+            },
+            hi: {
+                title: "चिट फंड कैलकुलेटर",
+                calculator: "कैलकुलेटर",
+                analysis: "विश्लेषण रिपोर्ट",
+                bestMonth: "सर्वोत्तम माह विश्लेषण",
+                analysisReportTitle: "चिट फंड विश्लेषण रिपोर्ट (मासिक)",
+                bestMonthTitle: "सर्वोत्तम माह विश्लेषण",
+                recommendedMonth: "🏆 अनुशंसित माह:",
+                maximumProfit: "अधिकतम लाभ:",
+                externalInterestRate: "बाहरी ब्याज दर:",
+                month: "माह",
+                bidAmountCol: "बोली राशि",
+                dealerCommission: "डीलर कमीशन",
+                payableInstallmentCol: "देय किस्त",
+                bidderGetsCol: "बोलीदाता को मिलता है",
+                profitLoss: "लाभ/हानि",
+                monthlyPercent: "मासिक %",
+                totalPercentage: "कुल प्रतिशत लाभ/हानि (20 महीने)",
+                annualRate: "वार्षिक साधारण ब्याज दर",
+                receivedAmount: "प्राप्त राशि",
+                chitProfitLoss: "चिट लाभ/हानि",
+                externalInterest: "बाहरी ब्याज",
+                totalBenefit: "कुल लाभ",
+                recommendation: "सिफारिश",
+                submit: "✓ जमा करें",
+                fetchToBestMonth: "📊 सर्वोत्तम माह में लाएं",
+                edit: "✏️ संपादित करें",
+                sampleData: "📄 नमूना डेटा",
+                clear: "🗑️ साफ करें",
+                exportPDF: "📄 PDF निर्यात करें",
+                downloadCSV: "⬇️ CSV डाउनलोड करें",
+                chit: "चिट",
+                chitAmount: "चिट राशि (₹):",
+                commission: "कमीशन (%):",
+                totalMonths: "कुल महीने:",
+                currentMonth: "वर्तमान महीना:",
+                bidding: "बोली",
+                bidAmount: "बोली राशि",
+                bidInterest: "बोली ब्याज",
+                bidAmountLabel: "बोली राशि (₹):",
+                bidInterestLabel: "बोली ब्याज (%):",
+                bidder: "बोलीदाता",
+                biddingRate: "बोली दर",
+                bidderGets: "बोलीदाता को मिलता है:",
+                shareResult: "📤 परिणाम साझा करें",
+                shareImage: "🖼️ चित्र साझा करें",
+                save: "💾 सेव करें",
+                otherMembers: "अन्य सदस्य",
+                originalInstallment: "मूल किस्त:",
+                dividendPerPerson: "प्रति व्यक्ति लाभांश:",
+                payableInstallment: "देय किस्त:",
+                monthlySavings: "मासिक बचत:",
+                manager: "प्रबंधक",
+                chitCommission: "चिट कमीशन:"
+            },
+            te: {
+                title: "చిట్ ఫండ్ క్యాల్కులేటర్",
+                calculator: "క్యాల్కులేటర్",
+                analysis: "విశ్లేషణ రిపోర్ట్",
+                bestMonth: "ఉత్తమ నెల విశ్లేషణ",
+                analysisReportTitle: "చిట్ ఫండ్ విశ్లేషణ రిపోర్ట్ (నెలవారీ)",
+                bestMonthTitle: "ఉత్తమ నెల విశ్లేషణ",
+                recommendedMonth: "🏆 సిఫార్సు చేయబడిన నెల:",
+                maximumProfit: "గరిష్ట లాభం:",
+                externalInterestRate: "బాహ్య వడ్డీ రేటు:",
+                month: "నెల",
+                bidAmountCol: "బిడ్ రాశి",
+                dealerCommission: "డీలర్ కమీషన్",
+                payableInstallmentCol: "చెల్లించవలసిన కిస్తు",
+                bidderGetsCol: "బిడ్డర్ పొందుతారు",
+                profitLoss: "లాభం/నష్టం",
+                monthlyPercent: "నెలవారీ %",
+                totalPercentage: "మొత్తం శాతం లాభం/నష్టం (20 నెలలు)",
+                annualRate: "వార్షిక సాధారణ వడ్డీ రేటు",
+                receivedAmount: "అందుకున్న రాశి",
+                chitProfitLoss: "చిట్ లాభం/నష్టం",
+                externalInterest: "బాహ్య వడ్డీ",
+                totalBenefit: "మొత్తం ప్రయోజనం",
+                recommendation: "సిఫార్సు",
+                submit: "✓ సమర్పించండి",
+                fetchToBestMonth: "📊 ఉత్తమ నెలకు తీసుకురండి",
+                edit: "✏️ సవరించండి",
+                sampleData: "📄 నమూనా డేటా",
+                clear: "🗑️ క్లియర్ చేయండి",
+                exportPDF: "📄 PDF ఎగుమతి చేయండి",
+                downloadCSV: "⬇️ CSV డౌన్‌లోడ్ చేయండి",
+                chit: "చిట్",
+                chitAmount: "చిట్ రాశి (₹):",
+                commission: "కమీషన్ (%):",
+                totalMonths: "మొత్తం నెలలు:",
+                currentMonth: "ప్రస్తుత నెల:",
+                bidding: "బిడ్డింగ్",
+                bidAmount: "బిడ్ రాశి",
+                bidInterest: "బిడ్ వ్యాజి",
+                bidAmountLabel: "బిడ్ రాశి (₹):",
+                bidInterestLabel: "బిడ్ వ్యాజి (%):",
+                bidder: "బిడ్డర్",
+                biddingRate: "బిడ్డింగ్ రేట్",
+                bidderGets: "బిడ్డర్ పొందుతారు:",
+                shareResult: "📤 ఫలితాన్ని షేర్ చేయండి",
+                shareImage: "🖼️ చిత్రాన్ని షేర్ చేయండి",
+                save: "💾 సేవ్ చేయండి",
+                otherMembers: "ఇతర సభ్యులు",
+                originalInstallment: "మూల కిస్తు:",
+                dividendPerPerson: "వ్యక్తికి లాభాంశం:",
+                payableInstallment: "చెల్లించవలసిన కిస్తు:",
+                monthlySavings: "నెలవారీ ఆదాయం:",
+                manager: "మ్యానేజర్",
+                chitCommission: "చిట్ కమీషన్:"
+            }
+        };
+        
+        function switchLanguage(lang) {
+            document.querySelectorAll('[onclick*="switchLanguage"]').forEach(btn => btn.style.opacity = '0.7');
+            event.target.style.opacity = '1';
+            
+            const t = translations[lang];
+            
+            // Update main elements
+            document.getElementById('mainTitle').textContent = t.title;
+            document.querySelector('.tab-btn:nth-child(1)').textContent = t.calculator;
+            document.querySelector('.tab-btn:nth-child(2)').textContent = t.analysis;
+            document.querySelector('.tab-btn:nth-child(3)').textContent = t.bestMonth;
+            
+            // Update form labels
+            document.querySelectorAll('label').forEach((label, i) => {
+                const labelTexts = [t.chitAmount, t.commission, t.totalMonths, t.currentMonth, t.bidAmountLabel, t.bidInterestLabel];
+                if (labelTexts[i]) label.textContent = labelTexts[i];
+            });
+            
+            // Update section headers
+            document.querySelectorAll('h2').forEach((h2, i) => {
+                const headers = [t.chit, t.bidding, t.bidder, t.otherMembers, t.manager];
+                if (headers[i]) h2.textContent = headers[i];
+            });
+            
+            // Update radio labels
+            document.querySelector('label[for="bidRadio"]').textContent = t.bidAmount;
+            document.querySelector('label[for="interestRadio"]').textContent = t.bidInterest;
+            
+            // Update output labels
+            const outputLabels = document.querySelectorAll('.output-group span:first-child');
+            const outputTexts = [t.bidderGets, t.originalInstallment, t.dividendPerPerson, t.payableInstallment, t.monthlySavings, t.chitCommission];
+            outputLabels.forEach((span, i) => {
+                if (outputTexts[i]) span.textContent = outputTexts[i];
+            });
+            
+            // Update buttons
+            document.querySelectorAll('button').forEach(btn => {
+                if (btn.textContent.includes('Share Result') || btn.textContent.includes('📤')) btn.textContent = t.shareResult;
+                if (btn.textContent.includes('Share Image') || btn.textContent.includes('🖼️')) btn.textContent = t.shareImage;
+                if (btn.textContent.includes('Save') || btn.textContent.includes('💾')) btn.textContent = t.save;
+                if (btn.textContent.includes('Submit') || btn.textContent.includes('✓')) btn.textContent = t.submit;
+                if (btn.textContent.includes('Fetch to Best Month') || btn.textContent.includes('📊')) btn.textContent = t.fetchToBestMonth;
+                if (btn.textContent.includes('Edit') || btn.textContent.includes('✏️')) btn.textContent = t.edit;
+                if (btn.textContent.includes('Sample Data') || btn.textContent.includes('📄')) btn.textContent = t.sampleData;
+                if (btn.textContent.includes('Clear') || btn.textContent.includes('🗑️')) btn.textContent = t.clear;
+                if (btn.textContent.includes('Export PDF') || btn.textContent.includes('PDF')) btn.textContent = t.exportPDF;
+                if (btn.textContent.includes('Download CSV') || btn.textContent.includes('CSV')) btn.textContent = t.downloadCSV;
+            });
+            
+            // Update analysis report titles
+            const analysisTitle = document.querySelector('h2[style*="text-align: center"]');
+            if (analysisTitle && analysisTitle.textContent.includes('Analysis Report')) {
+                analysisTitle.textContent = t.analysisReportTitle;
+            }
+            
+            const bestMonthTitle = document.querySelector('#profit h2');
+            if (bestMonthTitle) {
+                bestMonthTitle.textContent = t.bestMonthTitle;
+            }
+            
+            // Update recommended month text
+            const recommendedText = document.querySelector('h3[style*="color: #38a169"]');
+            if (recommendedText) {
+                const monthNumber = recommendedText.textContent.match(/\d+/);
+                recommendedText.innerHTML = `${t.recommendedMonth} <span id="bestMonth">${monthNumber ? monthNumber[0] : '20'}</span>`;
+            }
+            
+            // Update maximum profit text
+            const profitText = document.querySelector('p[id="bestMonthProfit"]');
+            if (profitText) {
+                const amount = profitText.textContent.match(/₹[\d,]+/);
+                profitText.textContent = `${t.maximumProfit} ${amount ? amount[0] : '₹0'}`;
+            }
+            
+            // Update external interest rate label
+            const externalRateLabel = document.querySelector('label[style*="font-weight: bold"]');
+            if (externalRateLabel && externalRateLabel.textContent.includes('External Interest Rate')) {
+                externalRateLabel.textContent = t.externalInterestRate;
+            }
+            
+            // Update table headers
+            const tableHeaders = document.querySelectorAll('.sample-table th');
+            const headerTexts = [t.month, t.bidAmountCol, t.dealerCommission, t.payableInstallmentCol, t.bidderGetsCol, t.profitLoss, t.monthlyPercent, t.totalPercentage, t.annualRate];
+            tableHeaders.forEach((th, i) => {
+                if (headerTexts[i] && !th.id) th.textContent = headerTexts[i];
+            });
+            
+            // Update best month analysis table headers
+            const bestMonthHeaders = document.querySelectorAll('#profit .sample-table th');
+            const bestMonthHeaderTexts = [t.month, t.bidAmountCol, t.receivedAmount, t.chitProfitLoss, '', '', '', '', '', t.recommendation];
+            bestMonthHeaders.forEach((th, i) => {
+                if (bestMonthHeaderTexts[i] && !th.id) th.textContent = bestMonthHeaderTexts[i];
+            });
+        }
+        
+        // Set default language
+        document.querySelector('[onclick="switchLanguage(\'en\')"]').style.opacity = '1';
+        
         // Initial calculation and data load
         calculate();
         loadSampleData();
@@ -1192,6 +1551,53 @@ Manager Chit Commission: ${document.getElementById('chitCommission').textContent
         const styleSheet = document.createElement('style');
         styleSheet.textContent = printStyles;
         document.head.appendChild(styleSheet);
+    </script>
+    
+    <!-- Footer with additional SEO content -->
+    <footer style="background: #1a1a2e; color: white; padding: 20px; margin-top: 40px; text-align: center; font-size: 12px;">
+        <div style="display: none;">
+            <h4>About Chit Fund Calculator</h4>
+            <p>This free online chit fund calculator provides comprehensive analysis for chit fund investments including bidding calculations, profit/loss analysis, best month recommendations, and financial planning tools. Perfect for individuals, financial advisors, and chit fund managers.</p>
+            
+            <h4>Disclaimer</h4>
+            <p>This calculator is for educational and planning purposes only. Actual chit fund terms may vary. Please consult with financial advisors and read all terms and conditions before making investment decisions.</p>
+            
+            <h4>Privacy & Security</h4>
+            <p>All calculations are performed locally in your browser. No personal or financial data is stored or transmitted to external servers.</p>
+        </div>
+        
+        <p>&copy; 2024 Chit Fund Calculator. Free Online Financial Planning Tool.</p>
+        <p>Calculate • Analyze • Optimize Your Chit Fund Strategy</p>
+    </footer>
+    
+    <!-- Additional Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How does the chit fund calculator work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Enter your chit amount, commission, months, and bid details. The calculator instantly shows bidding rates, member benefits, profit/loss analysis, and best month recommendations."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What is the best month analysis feature?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Best month analysis compares all months considering external interest rates to recommend the optimal month for bidding based on maximum profit potential."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can I export the calculation results?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can export results as PDF, CSV, or Excel files, and share them via social media or messaging apps."
+        }
+      }]
+    }
     </script>
 </body>
 </html>
