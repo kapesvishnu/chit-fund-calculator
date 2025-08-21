@@ -1,2 +1,1 @@
-# No Python dependencies required
-# This is a pure HTML/CSS/JavaScript application
+Flask==2.3.3
