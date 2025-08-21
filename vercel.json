@@ -1,13 +1,8 @@
 {
-  "functions": {
-    "app.py": {
-      "runtime": "python@3.9.0"
-    }
-  },
   "rewrites": [
     {
-      "source": "/((?!api|assets|favicon.ico|robots.txt|sitemap.xml|.*\\.).*)",
-      "destination": "/app.py"
+      "source": "/",
+      "destination": "/index.html"
     }
   ],
   "headers": [
