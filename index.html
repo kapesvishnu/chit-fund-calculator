@@ -88,7 +88,7 @@
         .tab-content { display: none; }
         .tab-content.active { display: block; }
         .sample-container { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); margin: 0 auto; max-width: 100%; overflow-x: auto; width: 100%; box-sizing: border-box; }
-        .sample-table { width: 100%; border-collapse: collapse; font-size: 12px; min-width: 800px; }
+        .sample-table { width: 100%; border-collapse: collapse; font-size: 12px; min-width: 600px; }
         .sample-table th { background: linear-gradient(145deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; white-space: nowrap; }
         .sample-table td { padding: 10px 8px; text-align: center; border-bottom: 1px solid #e2e8f0; white-space: nowrap; }
         .sample-table tr:nth-child(even) { background: #f8f9fa; }
@@ -111,14 +111,17 @@
             input[type="number"], input[type="text"] { width: 100%; max-width: 100%; box-sizing: border-box; }
             .radio-group { flex-direction: column; gap: 10px; width: 100%; }
             .radio-group span { display: flex; align-items: center; width: 100%; }
-            .tab-btn { padding: 8px 15px; margin: 5px; font-size: 14px; max-width: calc(33% - 10px); }
-            .tabs { display: flex; flex-wrap: wrap; justify-content: center; }
-            .sample-container { padding: 10px; width: 100%; max-width: 100vw; box-sizing: border-box; }
-            .sample-table { font-size: 10px; min-width: 600px; }
-            .sample-table th, .sample-table td { padding: 4px 2px; font-size: 9px; }
-            .highlight { font-size: 28px; word-break: break-word; }
+            .tab-btn { padding: 6px 12px; margin: 2px; font-size: 12px; flex: 1; min-width: 0; }
+            .tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; }
+            .sample-container { padding: 8px; width: 100%; max-width: 100vw; box-sizing: border-box; overflow-x: auto; }
+            .sample-table { font-size: 9px; min-width: 500px; }
+            .sample-table th, .sample-table td { padding: 3px 1px; font-size: 8px; white-space: nowrap; }
+            .highlight { font-size: 24px; word-break: break-word; }
             .output-group { flex-direction: column; align-items: flex-start; gap: 5px; width: 100%; }
             .blue-text { word-break: break-word; }
+            .button-container { flex-direction: column !important; }
+            .button-container button { width: 100% !important; margin: 2px 0 !important; }
+            div[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
         }
     </style>
     
@@ -130,10 +133,10 @@
 </head>
 <body>
     <!-- Language Switcher -->
-    <div style="position: fixed; top: 5px; right: 5px; z-index: 1000; background: rgba(255,255,255,0.9); padding: 4px; border-radius: 6px; box-shadow: 0 1px 5px rgba(0,0,0,0.1);">
-        <button onclick="switchLanguage('en')" style="background: none; border: none; margin: 0 1px; cursor: pointer; font-size: 10px; opacity: 0.7; transition: opacity 0.3s; padding: 2px; font-weight: bold; color: #667eea;" title="English">ENG</button>
-        <button onclick="switchLanguage('te')" style="background: none; border: none; margin: 0 1px; cursor: pointer; font-size: 10px; opacity: 0.7; transition: opacity 0.3s; padding: 2px; font-weight: bold; color: #667eea;" title="తెలుగు">తె</button>
-        <button onclick="switchLanguage('hi')" style="background: none; border: none; margin: 0 1px; cursor: pointer; font-size: 10px; opacity: 0.7; transition: opacity 0.3s; padding: 2px; font-weight: bold; color: #667eea;" title="हिंदी">हि</button>
+    <div style="position: fixed; top: 5px; right: 5px; z-index: 1000; background: rgba(255,255,255,0.9); padding: 2px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); max-width: 80px;">
+        <button onclick="switchLanguage('en')" style="background: none; border: none; margin: 0; cursor: pointer; font-size: 8px; opacity: 0.7; transition: opacity 0.3s; padding: 1px; font-weight: bold; color: #667eea;" title="English">EN</button>
+        <button onclick="switchLanguage('te')" style="background: none; border: none; margin: 0; cursor: pointer; font-size: 8px; opacity: 0.7; transition: opacity 0.3s; padding: 1px; font-weight: bold; color: #667eea;" title="తెలుగు">తె</button>
+        <button onclick="switchLanguage('hi')" style="background: none; border: none; margin: 0; cursor: pointer; font-size: 8px; opacity: 0.7; transition: opacity 0.3s; padding: 1px; font-weight: bold; color: #667eea;" title="हिंदी">हि</button>
     </div>
     
     <!-- Hidden SEO Content -->
@@ -264,7 +267,7 @@
         <div class="sample-container">
             <h2 style="text-align: center; color: #4a5568; margin-bottom: 25px;">Chit Fund Analysis Report (Monthly)</h2>
             <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 15px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 15px;">
                     <div>
                         <label style="font-size: 12px; font-weight: bold; color: #4a5568;">Chit Amount (₹):</label>
                         <input type="text" id="analysisChitAmount" value="40,00,000" min="0" style="width: 100%; padding: 4px; border: 1px solid #667eea; border-radius: 3px; font-size: 12px;" onchange="updateDealerCommissions()" onblur="formatIndianInput(this)" onfocus="removeCommas(this)">
@@ -288,16 +291,20 @@
                         <input type="text" id="analysisBidAmount" value="12,70,000" min="0" style="width: 100%; padding: 4px; border: 1px solid #667eea; border-radius: 3px; font-size: 12px;" onblur="formatIndianInput(this)" onfocus="removeCommas(this)">
                     </div>
                 </div>
-                <div style="text-align: center;">
-                    <label style="margin-right: 10px; font-weight: bold; font-size: 12px;">EMI Monthly Paid (₹):</label>
-                    <span id="emiMonthlyPaid" style="background: #f8f9fa; padding: 4px 8px; border: 1px solid #dee2e6; border-radius: 3px; font-size: 12px; margin-right: 15px; color: #495057;">₹0</span>
-                    <button onclick="submitValues()" style="background: #28a745; color: white; padding: 2px 6px; border: none; border-radius: 3px; cursor: pointer; font-size: 11px; width: auto; margin-right: 10px;">✓ Submit</button>
-                    <button onclick="fetchToBestMonth()" style="background: #17a2b8; color: white; padding: 2px 6px; border: none; border-radius: 3px; cursor: pointer; font-size: 11px; width: auto; margin-right: 10px;">📊 Fetch to Best Month</button>
-                    <button onclick="toggleEdit()" id="editBtn" style="background: #667eea; color: white; padding: 2px 6px; border: none; border-radius: 3px; cursor: pointer; font-size: 11px; width: auto; margin-right: 10px;">✏️ Edit</button>
-                    <button onclick="toggleSampleData()" id="sampleDataBtn" style="background: #38a169; color: white; padding: 2px 6px; border: none; border-radius: 3px; cursor: pointer; font-size: 11px; width: auto; margin-right: 10px;">📄 Sample Data</button>
-                    <button onclick="clearData()" style="background: #e53e3e; color: white; padding: 2px 6px; border: none; border-radius: 3px; cursor: pointer; font-size: 11px; width: auto; margin-right: 10px;">🗑️ Clear</button>
-                    <button onclick="exportToPDF()" style="background: #dc3545; color: white; padding: 2px 6px; border: none; border-radius: 3px; cursor: pointer; font-size: 11px; width: auto; margin-right: 10px;">📄 Export PDF</button>
-                    <button onclick="downloadAllRows()" style="background: #28a745; color: white; padding: 2px 6px; border: none; border-radius: 3px; cursor: pointer; font-size: 11px; width: auto;">⬇️ Download CSV</button>
+                <div style="text-align: center; margin-bottom: 15px;">
+                    <div style="margin-bottom: 10px;">
+                        <label style="margin-right: 10px; font-weight: bold; font-size: 12px;">EMI Monthly Paid (₹):</label>
+                        <span id="emiMonthlyPaid" style="background: #f8f9fa; padding: 4px 8px; border: 1px solid #dee2e6; border-radius: 3px; font-size: 12px; color: #495057;">₹0</span>
+                    </div>
+                    <div class="button-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 5px;">
+                        <button onclick="submitValues()" style="background: #28a745; color: white; padding: 4px 8px; border: none; border-radius: 3px; cursor: pointer; font-size: 10px; white-space: nowrap;">✓ Submit</button>
+                        <button onclick="fetchToBestMonth()" style="background: #17a2b8; color: white; padding: 4px 8px; border: none; border-radius: 3px; cursor: pointer; font-size: 10px; white-space: nowrap;">📊 Best Month</button>
+                        <button onclick="toggleEdit()" id="editBtn" style="background: #667eea; color: white; padding: 4px 8px; border: none; border-radius: 3px; cursor: pointer; font-size: 10px; white-space: nowrap;">✏️ Edit</button>
+                        <button onclick="toggleSampleData()" id="sampleDataBtn" style="background: #38a169; color: white; padding: 4px 8px; border: none; border-radius: 3px; cursor: pointer; font-size: 10px; white-space: nowrap;">📄 Sample</button>
+                        <button onclick="clearData()" style="background: #e53e3e; color: white; padding: 4px 8px; border: none; border-radius: 3px; cursor: pointer; font-size: 10px; white-space: nowrap;">🗑️ Clear</button>
+                        <button onclick="exportToPDF()" style="background: #dc3545; color: white; padding: 4px 8px; border: none; border-radius: 3px; cursor: pointer; font-size: 10px; white-space: nowrap;">📄 PDF</button>
+                        <button onclick="downloadAllRows()" style="background: #28a745; color: white; padding: 4px 8px; border: none; border-radius: 3px; cursor: pointer; font-size: 10px; white-space: nowrap;">⬇️ CSV</button>
+                    </div>
                 </div>
             </div>
             <table class="sample-table">
