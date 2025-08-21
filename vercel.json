@@ -1,7 +1,1 @@
-{
-  "functions": {
-    "app.py": {
-      "runtime": "python3.9"
-    }
-  }
-}
+{}
