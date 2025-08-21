@@ -1,0 +1,13 @@
+{
+  "name": "chit-fund-calculator",
+  "version": "1.0.0",
+  "description": "Advanced Chit Fund Calculator with Analysis and Best Month Recommendations",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "build": "echo 'No build step required for static HTML'"
+  },
+  "keywords": ["chit", "fund", "calculator", "finance"],
+  "author": "Vishnu",
+  "license": "MIT"
+}
